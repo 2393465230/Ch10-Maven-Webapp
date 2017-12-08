@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE configuration  
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">  
+<configuration>  
+	<properties resource="datasource.properties" />
+	<typeAliases>
+		<package name="com.yl.entity"/>
+	</typeAliases>
+    <!-- 对事务的管理和连接池的配置 -->  
+    <!-- <environments default="development">  
+        <environment id="development">  
+            <transactionManager type="JDBC" />  
+            <dataSource type="POOLED">  
+                <property name="driver" value="${driver}" />  
+                <property name="url" value="${url}" />  
+                <property name="username" value="${username}" />  
+                <property name="password" value="${password}" />  
+            </dataSource>  
+        </environment>  
+    </environments>   -->
+      
+    <!-- mapping 文件路径配置 -->  
+    <!-- <mappers>  
+        <mapper resource="com/yl/entity/EasybuyProduct.xml" />
+        <mapper resource="com/yl/entity/EasyBuyUser.xml" />  
+        <mapper resource="com/yl/entity/EasyBuyOrder.xml" />  
+        <mapper resource="com/yl/entity/EasyBuyOrderDetail.xml" /> 
+    </mappers>   -->
+</configuration>
